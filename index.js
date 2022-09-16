@@ -2,6 +2,11 @@
 
 module.exports = {
   name: require('./package').name,
+  options: {
+		autoImport: {
+			exclude: ['moment'],
+		},
+	},
 
   /**
    * This method tries to rename the import path of the addon from
